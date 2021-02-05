@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/tests/*.test.js",
+    "test": "mocha --timeout 10000 src/tests/*.test.js",
     "test:watch": "mocha src/tests/*.test.js -w",
     "test:prod": "cross-env NODE_ENV=prod npm t",
-    "prod": "cross-env NODE_ENV=prod node src/Api.js"
+    "start": "cross-env NODE_ENV=prod node src/Api.js"
   },
   "keywords": [],
   "author": "",

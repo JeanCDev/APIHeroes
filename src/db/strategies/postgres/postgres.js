@@ -36,7 +36,10 @@ class Postgres extends ICrud{
       quoteIdentifiers: false,
       ssl: process.env.SSL_DB,
       dialectOptions: {
-        ssl: process.env.SSL_DB
+        ssl: {
+          require: process.env.SSL_DB,
+          rejectUnauthorized: false
+        }
       }
     });
 
