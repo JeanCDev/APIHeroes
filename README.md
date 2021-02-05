@@ -4,13 +4,13 @@ docker ps - mostra os processos do docker na máquina
 This projet is a Generic API and can be used with any Postgres and MongoDB database, creating their tables automatically.
 
 You can check the running project with the link below:
-https://api-heroes-deploy.herokuapp.com
+<p>https://api-heroes-deploy.herokuapp.com</p>
 
 The documentation is availeble in this link:
-https://api-heroes-deploy.herokuapp.com/documentation
+<p>https://api-heroes-deploy.herokuapp.com/documentation</p>
 
 And the coverage is available with this link:
-https://api-heroes-deploy.herokuapp.com/coverage
+<p>https://api-heroes-deploy.herokuapp.com/coverage</p>
 
 ________________________________________________
 ## Criando uma nova imagem com o docker e postgres
