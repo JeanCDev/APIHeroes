@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 src/tests/*.test.js",
+    "postinstall": "npm run test:prod",
+    "test": "nyc --reporter=html mocha --timeout 10000 --exit src/tests/*.test.js",
     "test:watch": "mocha src/tests/*.test.js -w",
     "test:prod": "cross-env NODE_ENV=prod npm t",
     "start": "cross-env NODE_ENV=prod node src/Api.js"
@@ -25,6 +26,7 @@
     "hapi-auth-jwt2": "^10.2.0",
     "hapi-swagger": "^14.1.0",
     "inert": "^5.1.3",
+    "istanbul": "^0.4.5",
     "joi": "^17.3.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.13",
@@ -34,6 +36,7 @@
     "vision": "^5.4.4"
   },
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
   }
 }
