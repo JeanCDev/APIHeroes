@@ -1,5 +1,17 @@
 docker ps - mostra os processos do docker na máquina
 
+## API creted during the NodeJS API course
+This projet is a Generic API and can be used with any Postgres and MongoDB database, creating their tables automatically.
+
+You can check the running project with the link below:
+https://api-heroes-deploy.herokuapp.com
+
+The documentation is availeble in this link:
+https://api-heroes-deploy.herokuapp.com/documentation
+
+And the coverage is available with this link:
+https://api-heroes-deploy.herokuapp.com/coverage
+
 ________________________________________________
 ## Criando uma nova imagem com o docker e postgres
 ________________________________________________
